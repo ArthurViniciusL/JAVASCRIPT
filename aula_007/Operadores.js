@@ -19,8 +19,8 @@ let media_02 = soma / 2;
 console.log("Fazendo uma média:");
 console.log("Média 02: " + media_01);
 console.log("Média 01: " + media_02);
-//atribuição
 
+//atribuição
 var n = 10;
 console.log(n += 1 );
 console.log(n++);
