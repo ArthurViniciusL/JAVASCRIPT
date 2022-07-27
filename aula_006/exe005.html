@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            color: black;
+            background-color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div id = "msg_1">Olá</div>
+
+    <script>
+        var corpo = window.document.body;
+        corpo.style.background = 'black';
+        corpo.style.color = 'yellow';
+
+        var porTag = window.document.getElementsByTagName("p")[1]; //[x] é o número do elemento, começando em 0
+        porTag.style.color = 'blue';
+
+        window.document.write("1 . Está escrito assim: " + porTag.innerText);
+        
+        window.document.write(" 2 . Está escrito assim: " + porTag.innerHTML);
+
+        var porId = window.document.getElementById("msg");
+        window.document.write("3 . Está escrito assim: " + porId.innerHTML)
+        porId.style.background = 'red';
+        porId.innerText = 'Mudei aqui';
+        //por id, class e name são da mesma forma
+        
+
+    </script>
+</body>
+</html>

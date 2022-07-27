@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <!--
+    <div id = "area" onclick="clicar()" onmouseenter = "entrar()" onmouseout="sair()">
+        Interaja...
+    </div> -->
+
+    <div id = "area">
+        Interaja...
+    </div>
+
+    <script>
+        var quadrado = window.document.getElementById("area"); //O melhor é colocar dentro da função, ficou ai apenas pra facilitar.
+
+        quadrado.addEventListener('click', clicar);
+        quadrado.addEventListener('mouseenter', entrar);
+        quadrado.addEventListener('mouseout', sair);
+
+        function clicar() {
+            //var quadrado = window.document.getElementById("area");
+            quadrado.innerText = 'Clicou ein!';
+            quadrado.style.background = 'green';
+        }
+
+        function entrar() {
+            quadrado.innerText = 'Entrou!!';
+            quadrado.style.background = 'blue';
+        }
+        function sair() {
+            quadrado.innerText = 'Saiu :(';
+            quadrado.style.background = '#ff3131'; //vermelho em hexa.
+        }
+    </script>
+</body>
+</html>
