@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,38 @@
     <link rel="stylesheet" href="style_1.css">
     <title>Eventos DOM</title>
 </head>
+
 <body>
+
     <!--
-    <div id = "area" onclick="clicar()" onmouseenter = "entrar()" onmouseout="sair()">
+    <div id = "area" onclick="clicar()"
+
+    onmouseenter = "entrar()"
+
+    onmouseout="sair()"
+
+    onmousedown="presscionar()"
+
+    onmouseup="soltar()" 
+
+    onmousemove="movaSe()" >
         Interaja...
     </div> -->
 
-    <div id = "area">
+
+    <div id="area">
         Interaja...
     </div>
-
+ 
     <script>
         var quadrado = window.document.getElementById("area"); //O melhor é colocar dentro da função, ficou ai apenas pra facilitar.
-
         quadrado.addEventListener('click', clicar);
         quadrado.addEventListener('mouseenter', entrar);
         quadrado.addEventListener('mouseout', sair);
-
+        quadrado.addEventListener('mousedown',presscionar);
+        quadrado.addEventListener('mouseup', soltar);
+        quadrado.addEventListener('mousemove', movaSe);
+        
         function clicar() {
             //var quadrado = window.document.getElementById("area");
             quadrado.innerText = 'Clicou ein!';
@@ -36,8 +52,23 @@
         }
         function sair() {
             quadrado.innerText = 'Saiu :(';
-            quadrado.style.background = '#ff3131'; //vermelho em hexa.
+            quadrado.style.background = '#ff3131'; 
+        }
+
+        function presscionar() {
+            quadrado.innerHTML = 'Presscionando';
+            quadrado.style.background = 'pink';
+        }
+
+        function soltar() {
+            quadrado.innerText = "Soltou"
+        }
+
+        function movaSe() {
+            quadrado.innerHTML = 'Movendo-se';
+            quadrado.style.background = '#98dcaf';
         }
     </script>
 </body>
+
 </html>

@@ -26,20 +26,23 @@
         corpo.style.background = 'black';
         corpo.style.color = 'yellow';
 
-        var porTag = window.document.getElementsByTagName("p")[1]; //[x] é o número do elemento, começando em 0
+        var porTag = window.document.getElementsByTagName("p")[1]; //[x] é o número do elemento, começando em 0;
         porTag.style.color = 'blue';
 
         window.document.write("1 . Está escrito assim: " + porTag.innerText);
         
         window.document.write(" 2 . Está escrito assim: " + porTag.innerHTML);
+    
+        var porId = window.document.getElementById("msg_1");
 
-        var porId = window.document.getElementById("msg");
-        window.document.write("3 . Está escrito assim: " + porId.innerHTML)
+        window.document.write("3 . Está escrito assim: " + porId.innerHTML);
+        
         porId.style.background = 'red';
+
         porId.innerText = 'Mudei aqui';
         //por id, class e name são da mesma forma
-        
-
     </script>
+
 </body>
+
 </html>
