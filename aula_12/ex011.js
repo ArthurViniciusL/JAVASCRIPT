@@ -12,3 +12,4 @@ else if (idade < 18 || idade > 65) {
 else {
     console.log("- Vota obrigatório.");
 }
+

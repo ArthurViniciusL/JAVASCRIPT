@@ -1,7 +1,5 @@
-
-
-function calcular(p_txtv = window.document.getElementById("txt_vel"), p_res = window.document.querySelector('div#resposta')) {
-
+function calcular(  p_txtv = window.document.getElementById("txt_vel"),
+                    p_res = window.document.querySelector('div#resposta')) {
 
     let velocidade = Number(p_txtv.value);
     let resposta = p_res;
@@ -17,16 +15,15 @@ function calcular(p_txtv = window.document.getElementById("txt_vel"), p_res = wi
 
 /*
 function calcular() {
-    var txtv = window.document.getElementById('txtvel');
-    var res = window.document.querySelector('div#res');
-    var vel = Number(txtv.value);
+    var txt_vel = window.document.getElementById("txt_vel");
+    var resposta = window.document.querySelector('div#resposta');
+    var vel = Number(txt_vel.value);
 
-    res.innerHTML = `<p> Sua velocidade atual é de <strong>${vel}</strong> . </p>`;
+    resposta.innerHTML = `<p> Sua velocidade atual é de <strong>${vel}</strong> . </p>`;
 
     if (vel > 60) {
-        res.innerHTML += `<p> Multado! </p>`;
+        resposta.innerHTML += `<p> Multado! </p>`;
     }
 
-    res.innerHTML += `<p> Dirija com cuidado </p>`;
-}
-*/
+    resposta.innerHTML += `<p> Dirija com cuidado </p>`;
+}  */

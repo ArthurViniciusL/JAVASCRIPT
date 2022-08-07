@@ -9,4 +9,3 @@ if (pais == "Brasil") {
 else {
     console.log("Estrangeiro.");
 }
-
