@@ -1,2 +1,2 @@
 # estudo-javascript
-Exercícios e anotações dos meus estudos com JavaScript.
+Reunião de mini projeto, exercícios e anotações dos meus estudos com JavaScript.
