@@ -1,1 +1,0 @@
-O App informa a hora do dia e altera a fonto do centro, junto da cor de fundo do site, com base no horário coletado do sistema.
